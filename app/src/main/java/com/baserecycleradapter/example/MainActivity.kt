@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         recyclerView = findViewById(R.id.recyclerView)
 
 //        setSimpleRecyclerView()
-        setAdvanceRecyclerView()
+        setAdvanceRecyclerView()//refer this
     }
 
     private fun setAdvanceRecyclerView() {
