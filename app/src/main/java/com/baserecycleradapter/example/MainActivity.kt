@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.base.recycleradapter.BaseRecycleAdapter
 import com.base.recycleradapter.BaseRecyclerItem
+import com.baserecycleradapter.example.advance.factory.ViewHolderFactory
 import com.baserecycleradapter.example.advance.item.AnimalRecycleItem
 import com.baserecycleradapter.example.advance.item.FruitRecycleItem
 import com.baserecycleradapter.example.advance.item.HeaderRecycleItem
@@ -130,7 +131,7 @@ class MainActivity : AppCompatActivity() {
         )
 
         recyclerView.layoutManager = LinearLayoutManager(this)
-        recyclerView.adapter = BaseRecycleAdapter<BaseRecyclerItem>(list)
+        recyclerView.adapter = BaseRecycleAdapter<BaseRecyclerItem>(list, ViewHolderFactory)
     }
 
     private fun setSimpleRecyclerView() {
